@@ -16,3 +16,16 @@ const btnAddTask = document.createElement('button');
 btnAddTask.id = 'create-task';
 btnAddTask.innerText = 'Criar tarefa';
 sectionInputBtnAddTask.appendChild(btnAddTask);
+
+function createList() {
+ const valueInput = inputTaskText.value;
+ if (inputTaskText.value === '') {
+  alert('Digite uma tarefa!');
+ } else {
+  const li = document.createElement('li');
+  li.innerText = valueInput;
+  ol.appendChild(li);
+  inputTaskText.value = '';
+ }
+}
+btnAddTask.addEventListener('click', createList);
