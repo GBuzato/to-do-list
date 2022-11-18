@@ -29,3 +29,13 @@ function createList() {
  }
 }
 btnAddTask.addEventListener('click', createList);
+
+const list = document.getElementsByTagName('li');
+function changeBackgroundColorLi(event) {
+  const li = event.target;
+  for (let i = 0; i < list.length; i += 1) {
+    list[i].style.backgroundColor = 'white';
+  }
+  li.style.backgroundColor = 'gray';
+}
+ol.addEventListener('click', changeBackgroundColorLi);
