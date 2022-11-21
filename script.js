@@ -49,3 +49,14 @@ function addClassCompleted(event) {
   }
 }
 ol.addEventListener('dblclick', addClassCompleted);
+
+const sectionBtnClean = document.createElement('section');
+main.appendChild(sectionBtnClean);
+const btnClean = document.createElement('button');
+btnClean.innerText = 'Excluir lista';
+sectionBtnClean.appendChild(btnClean);
+
+function removeList() {
+  ol.innerText = '';
+}
+btnClean.addEventListener('click', removeList);
