@@ -39,3 +39,13 @@ function changeBackgroundColorLi(event) {
   li.style.backgroundColor = 'gray';
 }
 ol.addEventListener('click', changeBackgroundColorLi);
+
+function addClassCompleted(event) {
+  const li = event.target;
+  if (li.className === 'completed') {
+    li.className = '';
+  } else {
+    li.className = 'completed';
+  }
+}
+ol.addEventListener('dblclick', addClassCompleted);
