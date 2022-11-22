@@ -60,3 +60,21 @@ function removeList() {
   ol.innerText = '';
 }
 btnClean.addEventListener('click', removeList);
+
+const sectionBtnCleanCompleted = document.createElement('section');
+main.appendChild(sectionBtnCleanCompleted);
+const btnCleanCompleted = document.createElement('button');
+btnCleanCompleted.innerText = 'Excluir tarefas concluídas';
+sectionBtnCleanCompleted.appendChild(btnCleanCompleted);
+
+function removeTasksCompleted() {
+  for (let i = 0; i < list.length; i += 1) {
+    if (list[i].className === 'completed') {
+      ol.removeChild(list[i]);
+    } 
+  }
+  for (let idx = 0; idx < list.length; idx += 1) {
+    ol.removeChild(list[idx]);
+  }
+}
+btnCleanCompleted.addEventListener('click', removeTasksCompleted);
