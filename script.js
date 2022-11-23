@@ -66,13 +66,12 @@ btnCleanCompleted.innerText = 'Excluir tarefas concluídas';
 sectionBtn.appendChild(btnCleanCompleted);
 
 function removeTasksCompleted() {
-  for (let i = 0; i < list.length; i += 1) {
-    if (list[i].className === 'completed') {
-      ol.removeChild(list[i]);
-    } 
+  const classCompleted = document.getElementsByClassName('completed');
+  for (let i = 0; i < classCompleted.length; i += 1) {
+    ol.removeChild(classCompleted[i]);
   }
-  for (let idx = 0; idx < list.length; idx += 1) {
-    ol.removeChild(list[idx]);
+  for (let idx = 0; idx < classCompleted.length; idx += 1) {
+    ol.removeChild(classCompleted[idx]);
   }
 }
 btnCleanCompleted.addEventListener('click', removeTasksCompleted);
