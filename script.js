@@ -12,6 +12,15 @@ main.appendChild(sectionOl);
 const ol = document.createElement('ol');
 sectionOl.append(ol);
 
+const sectionBtn = document.createElement('section');
+const btnSaveList = document.createElement('button');
+btnSaveList.innerText = 'Salvar lista';
+sectionBtn.appendChild(btnSaveList);
+function setTasks() {
+  localStorage.setItem(ol, JSON.stringify(ol.innerHTML));
+}
+btnSaveList.addEventListener('click', setTasks);
+
 const btnAddTask = document.createElement('button');
 btnAddTask.id = 'create-task';
 btnAddTask.innerText = 'Criar tarefa';
@@ -50,7 +59,7 @@ function addClassCompleted(event) {
 }
 ol.addEventListener('dblclick', addClassCompleted);
 
-const sectionBtn = document.createElement('section');
+
 main.appendChild(sectionBtn);
 const btnClean = document.createElement('button');
 btnClean.innerText = 'Excluir lista';
@@ -75,3 +84,12 @@ function removeTasksCompleted() {
   }
 }
 btnCleanCompleted.addEventListener('click', removeTasksCompleted);
+
+function getTasks() {
+  const localStorageValue = JSON.parse(localStorage.getItem(ol));
+  ol.innerHTML = localStorageValue;
+};
+
+window.onload = () => {
+  getTasks();
+}
