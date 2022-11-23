@@ -50,22 +50,20 @@ function addClassCompleted(event) {
 }
 ol.addEventListener('dblclick', addClassCompleted);
 
-const sectionBtnClean = document.createElement('section');
-main.appendChild(sectionBtnClean);
+const sectionBtn = document.createElement('section');
+main.appendChild(sectionBtn);
 const btnClean = document.createElement('button');
 btnClean.innerText = 'Excluir lista';
-sectionBtnClean.appendChild(btnClean);
+sectionBtn.appendChild(btnClean);
 
 function removeList() {
   ol.innerText = '';
 }
 btnClean.addEventListener('click', removeList);
 
-const sectionBtnCleanCompleted = document.createElement('section');
-main.appendChild(sectionBtnCleanCompleted);
 const btnCleanCompleted = document.createElement('button');
 btnCleanCompleted.innerText = 'Excluir tarefas concluídas';
-sectionBtnCleanCompleted.appendChild(btnCleanCompleted);
+sectionBtn.appendChild(btnCleanCompleted);
 
 function removeTasksCompleted() {
   for (let i = 0; i < list.length; i += 1) {
