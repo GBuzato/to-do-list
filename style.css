@@ -31,3 +31,7 @@ header h1 {
 section ol {
   list-style: none;
 }
+
+#sectionBtn {
+  padding-top: 25px;
+}
