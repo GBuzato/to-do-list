@@ -15,6 +15,7 @@ const ol = document.createElement('ol');
 sectionOl.append(ol);
 
 const sectionBtn = document.createElement('section');
+sectionBtn.id = 'sectionBtn';
 const btnSaveList = document.createElement('button');
 btnSaveList.innerText = 'Salvar lista';
 sectionBtn.appendChild(btnSaveList);
