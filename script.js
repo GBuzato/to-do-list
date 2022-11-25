@@ -19,7 +19,7 @@ const sectionBtn = document.createElement('section');
 sectionBtn.id = 'sectionBtn';
 const btnSaveList = document.createElement('button');
 btnSaveList.innerText = 'Salvar lista';
-btnSaveList.id = 'save-list';
+btnSaveList.className = 'buttons';
 sectionBtn.appendChild(btnSaveList);
 function setTasks() {
   localStorage.setItem(ol, JSON.stringify(ol.innerHTML));
@@ -68,6 +68,7 @@ ol.addEventListener('dblclick', addClassCompleted);
 main.appendChild(sectionBtn);
 const btnClean = document.createElement('button');
 btnClean.innerText = 'Excluir lista';
+btnClean.className = 'buttons';
 sectionBtn.appendChild(btnClean);
 
 function removeList() {
@@ -77,6 +78,7 @@ btnClean.addEventListener('click', removeList);
 
 const btnCleanCompleted = document.createElement('button');
 btnCleanCompleted.innerText = 'Excluir tarefas concluídas';
+btnCleanCompleted.className = 'buttons';
 sectionBtn.appendChild(btnCleanCompleted);
 
 function removeTasksCompleted() {
@@ -98,6 +100,7 @@ function getTasks() {
 const btnRemoveSelected = document.createElement('button');
 btnRemoveSelected.id = 'remove-selected';
 btnRemoveSelected.innerText = 'Excluir tarefa selecionada';
+btnRemoveSelected.className = 'buttons';
 sectionBtn.appendChild(btnRemoveSelected);
 
 function removeSelected() {
