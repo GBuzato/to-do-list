@@ -19,6 +19,7 @@ const sectionBtn = document.createElement('section');
 sectionBtn.id = 'sectionBtn';
 const btnSaveList = document.createElement('button');
 btnSaveList.innerText = 'Salvar lista';
+btnSaveList.id = 'save-list';
 sectionBtn.appendChild(btnSaveList);
 function setTasks() {
   localStorage.setItem(ol, JSON.stringify(ol.innerHTML));
