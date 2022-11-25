@@ -96,7 +96,7 @@ function getTasks() {
 
 const btnRemoveSelected = document.createElement('button');
 btnRemoveSelected.id = 'remove-selected';
-btnRemoveSelected.innerText = 'Excluir selecionado';
+btnRemoveSelected.innerText = 'Excluir tarefa selecionada';
 sectionBtn.appendChild(btnRemoveSelected);
 
 function removeSelected() {
