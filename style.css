@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
 .completed {
   text-decoration: line-through;
+}
+
+body {
+  text-align: center;
+}
+
+header h1 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
