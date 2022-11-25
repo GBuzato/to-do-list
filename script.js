@@ -28,6 +28,7 @@ btnSaveList.addEventListener('click', setTasks);
 
 const btnAddTask = document.createElement('button');
 btnAddTask.id = 'create-task';
+btnAddTask.className = 'buttons';
 btnAddTask.innerText = 'Criar tarefa';
 sectionInputBtnAddTask.appendChild(btnAddTask);
 
