@@ -90,6 +90,11 @@ function getTasks() {
   ol.innerHTML = localStorageValue;
 };
 
+const btnRemoveSelected = document.createElement('button');
+btnRemoveSelected.id = 'remove-selected';
+btnRemoveSelected.innerText = 'Excluir selecionado';
+sectionBtn.appendChild(btnRemoveSelected);
+
 window.onload = () => {
   getTasks();
 }
