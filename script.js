@@ -95,6 +95,15 @@ btnRemoveSelected.id = 'remove-selected';
 btnRemoveSelected.innerText = 'Excluir selecionado';
 sectionBtn.appendChild(btnRemoveSelected);
 
+function removeSelected() {
+  for (let i = 0; i < list.length; i += 1) {
+    if (list[i].style.backgroundColor === 'gray') {
+      ol.removeChild(list[i]);
+    }
+  }
+}
+btnRemoveSelected.addEventListener('click', removeSelected);
+
 window.onload = () => {
   getTasks();
 }
