@@ -6,6 +6,7 @@ sectionInputBtnAddTask.id = 'sectionInputBtn';
 main.appendChild(sectionInputBtnAddTask);
 const inputTaskText = document.createElement('input');
 inputTaskText.id = 'task-text';
+inputTaskText.placeholder = ' Digite aqui sua tarefa';
 sectionInputBtnAddTask.appendChild(inputTaskText);
 
 const sectionOl = document.createElement('section');
