@@ -9,6 +9,7 @@ inputTaskText.id = 'task-text';
 sectionInputBtnAddTask.appendChild(inputTaskText);
 
 const sectionOl = document.createElement('section');
+sectionOl.id = 'sectionOl';
 main.appendChild(sectionOl);
 const ol = document.createElement('ol');
 sectionOl.append(ol);
