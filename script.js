@@ -2,6 +2,7 @@ const main = document.createElement('main');
 const body = document.getElementsByTagName('body')[0];
 body.appendChild(main);
 const sectionInputBtnAddTask = document.createElement('section');
+sectionInputBtnAddTask.id = 'sectionInputBtn';
 main.appendChild(sectionInputBtnAddTask);
 const inputTaskText = document.createElement('input');
 inputTaskText.id = 'task-text';
