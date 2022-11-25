@@ -26,3 +26,7 @@ header h1 {
 #sectionOl {
   padding-top: 25px;
 }
+
+section ol {
+  list-style: none;
+}
