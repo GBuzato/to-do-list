@@ -35,3 +35,22 @@ section ol {
 #sectionBtn {
   padding-top: 25px;
 }
+
+#create-task:hover {
+  background-color: rgb(156 156 156);
+  color: black;
+  transition: 0.3s;
+}
+
+#create-task {
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  background-color: rgb(16 78 139);
+  color: white;
+}
+
+#task-text {
+  height: 25px;
+  border-radius: 5px;
+}
