@@ -44,7 +44,7 @@ section ol {
 
 #create-task {
   border-radius: 5px;
-  width: 100px;
+  width: 80px;
   height: 25px;
   background-color: rgb(16 78 139);
   color: white;
@@ -53,4 +53,18 @@ section ol {
 #task-text {
   height: 25px;
   border-radius: 5px;
+}
+
+#save-list {
+  padding: 2px ;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: rgb(16 78 139);
+  color: white;
+}
+
+#save-list:hover {
+  background-color: rgb(156 156 156);
+  color: black;
+  transition: 0.3s;
 }
