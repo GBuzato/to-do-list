@@ -116,3 +116,10 @@ btnRemoveSelected.addEventListener('click', removeSelected);
 window.onload = () => {
   getTasks();
 }
+
+const header = document.getElementsByTagName('header')[0];
+const div1 = document.createElement('div');
+div1.id = 'all-contente';
+body.appendChild(div1);
+div1.appendChild(header);
+div1.appendChild(main);
