@@ -59,3 +59,10 @@ section ol {
   color: black;
   transition: 0.3s;
 }
+
+#all-contente {
+  border: 5px solid rgb(16 78 139);
+  border-radius: 20px;
+  width: 60%;
+  background-color: white;
+}
