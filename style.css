@@ -18,6 +18,12 @@ body {
   min-height: 100vh;
 }
 
+.cover {
+  background-image: url(assets/fundo1.png);
+  background-size: cover;
+  min-height: 100vh;
+}
+
 header h1 {
   padding-bottom: 30px;
   padding-top: 30px;
@@ -61,8 +67,8 @@ section ol {
 }
 
 #all-contente {
-  border: 5px solid rgb(16 78 139);
+  border: 5px solid #C2E4E0;
   border-radius: 20px;
   width: 60%;
-  background-color: white;
+  background-color: #c2e4e062;
 }
