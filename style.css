@@ -72,3 +72,8 @@ section ol {
   width: 60%;
   background-color: #c2e4e062;
 }
+
+ol {
+  width: 50%;
+  margin: auto;
+}
