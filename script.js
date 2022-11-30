@@ -49,7 +49,7 @@ const list = document.getElementsByTagName('li');
 function changeBackgroundColorLi(event) {
   const li = event.target;
   for (let i = 0; i < list.length; i += 1) {
-    list[i].style.backgroundColor = 'white';
+    list[i].style.backgroundColor = '';
   }
   li.style.backgroundColor = 'gray';
 }
