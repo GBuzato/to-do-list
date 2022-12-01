@@ -123,3 +123,35 @@ div1.id = 'all-contente';
 body.appendChild(div1);
 div1.appendChild(header);
 div1.appendChild(main);
+
+const btnTaskEditor = document.createElement('button');
+btnTaskEditor.className = 'buttons';
+btnTaskEditor.innerText = 'Editar tarefa';
+sectionBtn.appendChild(btnTaskEditor);
+
+const inputValue = document.getElementById('task-text');
+function taskEditor(event) {
+  let liText;
+  for (let i = 0; i < list.length; i += 1) {
+    if (list[i].style.backgroundColor === 'gray') {
+      liText = list[i].innerText;
+      ol.removeChild(list[i]);
+    }
+  } 
+  if (liText === undefined) {
+    return alert('Nenhuma tarefa foi selecionada.');
+   }
+  inputValue.value = liText;
+}
+
+btnTaskEditor.addEventListener('click', taskEditor);
+
+const sectionOperation = document.createElement('section');
+sectionOperation.id = 'section-operation';
+main.appendChild(sectionOperation);
+const paragrafo1 = document.createElement('p');
+paragrafo1.innerText = 'Clique uma vez em um ítem para selecioná-lo.'
+sectionOperation.appendChild(paragrafo1);
+const paragrafo2 = document.createElement('p');
+paragrafo2.innerText = 'Clique duas vezes em um ítem para marcá-lo como completo.'
+sectionOperation.appendChild(paragrafo2);
