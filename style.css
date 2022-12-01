@@ -77,3 +77,12 @@ ol {
   width: 50%;
   margin: auto;
 }
+
+section p {
+  color: #439627;
+
+}
+
+#section-operation {
+  padding-bottom: 25px;
+}
